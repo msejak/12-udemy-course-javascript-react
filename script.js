@@ -41,7 +41,7 @@ let personalMovieDB = {
   movies: {},
   actors: {},
   genres: [],
-  privat: false,
+  private: false,
 };
 
 // 3) Задайте пользователю по два раза вопросы:
@@ -53,12 +53,12 @@ let personalMovieDB = {
 //         'logan': '8.1'
 //     }
 
-const oneLastMovie1 = prompt('Один из просмотренных фильмов?', ''),
-  movieScore1 = +prompt('На сколько оцените его?', ''),
-  oneLastMovie2 = prompt('Один из просмотренных фильмов?', ''),
-  movieScore2 = +prompt('На сколько оцените его?', '');
+const a = prompt('Один из просмотренных фильмов?', ''),
+  b = +prompt('На сколько оцените его?', ''),
+  c = prompt('Один из просмотренных фильмов?', ''),
+  d = +prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies[oneLastMovie1] = movieScore1;
-personalMovieDB.movies[oneLastMovie2] = movieScore2;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
