@@ -62,3 +62,25 @@ personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
+
+// if (4 == 4) {
+//   console.log('Ok!');
+// } else {
+//   console.log('Error');
+// }
+
+// const num = 120;
+
+// switch (num) {
+//   case 49:
+//     console.log('Неверно');
+//     break;
+//   case 100:
+//     console.log('Много');
+//     break;
+//   case 50:
+//     console.log('Ok!');
+//     break;
+//   default:
+//     console.log('В другой раз');
+// }
