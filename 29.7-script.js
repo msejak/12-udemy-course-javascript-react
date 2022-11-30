@@ -36,9 +36,9 @@ function calculateVolumeAndArea(number) {
     const volume = Math.pow(number, 3);
     const square = 6 * Math.pow(number, 2);
     const result = `Объем куба: ${volume}, площадь всей поверхности: ${square}`;
-    console.log(result);
+    return result;
   } else {
-    console.log('При вычислении произошла ошибка');
+    return 'При вычислении произошла ошибка';
   }
 }
 
@@ -63,11 +63,11 @@ getCoupeNumber('Hello')  => "Ошибка. Проверьте правильно
 // Место для второй задачи
 function getCoupeNumber(num) {
   if (typeof num !== 'number' || num < 0 || num % 1 !== 0) {
-    console.log('Ошибка. Проверьте правильность введенного номера места');
+    return 'Ошибка. Проверьте правильность введенного номера места';
   } else if (num === 0 || num > 36) {
-    console.log('Таких мест в вагоне не существует');
+    return 'Таких мест в вагоне не существует';
   } else {
     let result = Math.ceil(num / 4);
-    console.log(result);
+    return result;
   }
 }
