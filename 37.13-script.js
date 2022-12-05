@@ -55,15 +55,9 @@ function isBudgetEnough(data) {
   let totalSquare = 0;
   data.shops.forEach((item, i) => {
     const itemSquare = item.width * item.length;
-    // console.log(`${itemSquare}: ${typeof itemSquare}`);
-    // totalSquare.push(itemSquare);
     totalSquare += itemSquare;
     return totalSquare;
   });
-
-  // console.log( `${totalSquare}: ${typeof totalSquare}`);
-  // return totalSquare;
-  // console.log(totalSquare);
 
   const cost = totalSquare * data.height * data.moneyPer1m3;
 
@@ -74,5 +68,4 @@ function isBudgetEnough(data) {
   }
 }
 
-// isBudgetEnough(shoppingMallData);
 console.log(isBudgetEnough(shoppingMallData));
