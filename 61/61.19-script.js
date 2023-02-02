@@ -33,6 +33,7 @@ console.log(deepCount(['1', 5, '3', ['10']]));
 // }
 
 // console.log(pow(2, 0));
+
 // console.log(pow(2, 1));
 // console.log(pow(2, 2));
 // console.log(pow(2, 3));
