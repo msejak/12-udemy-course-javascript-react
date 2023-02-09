@@ -1,13 +1,33 @@
 'use strict';
 
 const box = document.querySelector('.box');
+const block = document.querySelector('.block');
 
-const newHeight = 100;
-const newWidth = 400;
+console.log(block);
 
-function changeParams(elem, h, w) {
-    elem.style.height = `${h ?? 200}px`;
-    elem.style.width = `${w ?? 200}px`;
-}
+// if (block) {
+//     console.log(block.textContent);
+// }
 
-changeParams(box, newHeight, newWidth);
+// console.log(block?.textContent);
+
+// block?.textContent = '123';
+
+// console.log(1 + 2);
+
+const userData = {
+    name: 'Ivan',
+    age: null,
+    say: function () {
+        console.log('Hello');
+    },
+};
+
+userData.say();
+userData.hey?.();
+
+// if (userData && userData.skills && userData.skills.js) {
+//     console.log(userData.skills.js);
+// }
+
+console.log(userData?.skills?.js);
