@@ -1,21 +1,36 @@
-'use strict';
+const btns = document.querySelectorAll('button'),
+  overlay = document.querySelector('.overlay');
 
-// console.log(document.body);
-// console.log(document.documentElement);
-// console.log(document.body.childNodes);
-// console.log(document.body.firstChild);
-// console.log(document.body.firstElementChild);
-// console.log(document.body.lastChild);
+// btn.onclick = function () {
+//   alert('Click');
+// };
 
-// console.log(document.querySelector('#current').parentNode.parentNode);
-// console.log(document.querySelector('#current').parentElement);
+// btn.onclick = function () {
+//   alert('Second Click');
+// };
 
-// console.log(document.querySelector('[data-current="3"]').nextElementSibling);
+let i = 0;
+const deleteElement = (e) => {
+  console.log(e.target);
+  console.log(e.type);
+  // i++;
+  // if (i == 1) {
+  //   btn.removeEventListener('click', deleteElement);
+  // }
+  // e.target.remove();
+};
 
-for (let node of document.body.childNodes) {
-  if (node.nodeName == '#text') {
-    continue;
-  }
+// btn.addEventListener('click', deleteElement);
+// overlay.addEventListener('click', deleteElement);
 
-  console.log(node);
-}
+btns.forEach((btn) => {
+  btn.addEventListener('click', deleteElement, { once: true });
+});
+
+const link = document.querySelector('a');
+
+link.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  console.log(event.target);
+});

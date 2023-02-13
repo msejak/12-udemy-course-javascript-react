@@ -1,52 +1,23 @@
 'use strict';
 
-const box = document.getElementById('box'),
-  btns = document.getElementsByTagName('button'),
-  circles = document.getElementsByClassName('circle'),
-  wrapper = document.querySelector('.wrapper'),
-  hearts = wrapper.querySelectorAll('.heart'),
-  oneHeart = wrapper.querySelector('.circle');
+const box = document.getElementById('box');
 
-// box.style.backgroundColor = 'blue';
-// box.style.width = '500px';
+console.log(box);
 
-box.style.cssText = 'background-color: blue; width: 500px';
+const btns = document.getElementsByTagName('button');
 
-btns[1].style.borderRadius = '100%';
-circles[0].style.backgroundColor = 'red';
+console.log(btns[0]);
 
-// for (let i = 0; i < hearts.length; i++) {
-//   hearts[i].style.backgroundColor = 'blue';
-// }
+const circles = document.getElementsByClassName('circle');
+
+console.log(circles);
+
+const hearts = document.querySelectorAll('.heart');
 
 hearts.forEach((item) => {
-  item.style.backgroundColor = 'blue';
+  console.log(item);
 });
 
-const div = document.createElement('div');
-// const text = document.createTextNode('Тут был я');
+const oneHeart = document.querySelector('.circle');
 
-div.classList.add('black');
-
-// document.body.append(div);
-wrapper.append(div);
-// wrapper.appendChild(div);
-
-// wrapper.insertBefore(div, hearts[1]);
-
-// wrapper.prepend(div);
-
-// hearts[0].before(div);
-// hearts[0].after(div);
-
-// circles[0].remove();
-// wrapper.removeChild(hearts[1]);
-
-hearts[0].replaceWith(circles[0]);
-// wrapper.replaceChild(circles[0], hearts[0]);
-
-div.innerHTML = '<h1>Hello World</h1>';
-
-// div.textContent = 'Hello';
-
-div.insertAdjacentHTML('afterend', '<h2>Hello</h2>');
+console.log(oneHeart);
