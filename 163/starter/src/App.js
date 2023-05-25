@@ -1,4 +1,4 @@
-import { Component, useState } from 'react';
+import { Component, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import './App.css';
 
@@ -72,6 +72,10 @@ const Slider = (props) => {
     function toggleAutoplay() {
         setAutoplay((autoplay) => !autoplay);
     }
+
+    useEffect(() => {
+        document.title = `Slide: ${slide}`;
+    }, [slide]);
 
     return (
         <Container>
