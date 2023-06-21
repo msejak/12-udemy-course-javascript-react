@@ -22,51 +22,5 @@
       "price": 21
     }
   ],
-  "requests": [
-    {
-      "name": "Watchlist",
-      "phone": "+79179029704",
-      "id": 1
-    },
-    {
-      "name": "EXOD",
-      "phone": "0(505) 595 15 60",
-      "id": 2
-    },
-    {
-      "name": "al",
-      "phone": "+7 (917) 902-97-66",
-      "id": 3
-    },
-    {
-      "name": "webpack",
-      "phone": "+79199225687",
-      "id": 4
-    },
-    {
-      "name": "webpack",
-      "phone": "+79199225687",
-      "id": 5
-    },
-    {
-      "name": "webpack",
-      "phone": "+79199225687",
-      "id": 6
-    },
-    {
-      "name": "webpack",
-      "phone": "+79199225687",
-      "id": 7
-    },
-    {
-      "name": "webpack",
-      "phone": "+79199225687",
-      "id": 8
-    },
-    {
-      "name": "webpack",
-      "phone": "+79199225687",
-      "id": 9
-    }
-  ]
+  "requests": []
 }
